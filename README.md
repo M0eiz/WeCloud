@@ -17,7 +17,7 @@
 
 # Tech Stack
 
-## 🔹 Frontend: React (Next.js), Tailwind CSS, TypeScript
+## 🔹 Frontend: React (Next.js)
 ## 🔹 Backend: Node.js (Express), Python (FastAPI)
 ## 🔹 Database: PostgreSQL, MongoDB
 ## 🔹 Cloud Storage: AWS S3, Google Cloud Storage
