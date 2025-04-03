@@ -1,0 +1,49 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>304</x><y>120</y><w>336</w><h>88</h></coordinates><panel_attributes>WeCloud Data Layer
+-----------------------------------
+- Manages structured (PostgreSQL) and unstructured (MongoDB) data
+- Ensures data integrity, consistency, and security
+- Implements caching, backups, and encryption strategies
+- Handles cloud storage integration with AWS S3, Google Cloud</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>232</x><y>336</y><w>96</w><h>64</h></coordinates><panel_attributes>+ fetchData()      
++ storeData()     
++ updateData()     
++ deleteData()    
+bg=blue
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>136</x><y>240</y><w>192</w><h>96</h></coordinates><panel_attributes>PostgreSQL (Relational DB)
+--
+- Stores user accounts, metadata, logs
+- Enforces ACID transactions
+- Uses indexes and query optimization
+- ORM: Sequelize (Node.js)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>376</x><y>240</y><w>216</w><h>96</h></coordinates><panel_attributes>MongoDB (NoSQL)
+--
+- Stores unstructured file metadata
+- Provides flexible schema for file properties
+- High availability with replication
+- Indexed queries for fast retrieval</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>632</x><y>240</y><w>224</w><h>96</h></coordinates><panel_attributes>Cloud Storage (AWS S3, Google Cloud)
+--
+- Stores encrypted user files
+- Secure API-based file access
+- Multi-region replication</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>480</x><y>336</y><w>112</w><h>56</h></coordinates><panel_attributes>+ fetchData()      
++ storeData()     
++ updateData()     
++ deleteData()    
+bg=blue
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>752</x><y>336</y><w>112</w><h>56</h></coordinates><panel_attributes>+ fetchData()      
++ storeData()     
++ updateData()     
++ deleteData()    
+bg=blue
+bg=blue
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>144</x><y>448</y><w>168</w><h>88</h></coordinates><panel_attributes>DataModel(Sql)
+--
+ DataModel (SQL)  
+- id               
+- name             
+- created_at      </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>448</y><w>168</w><h>72</h></coordinates><panel_attributes>DataModel (NoSQL)
+--
+- documentId
+- fileData
+- metadata  </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>448</y><w>176</w><h>72</h></coordinates><panel_attributes>FileMetadata
+--
+- fileId
+- storageUrl 
+- metadata</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>632</x><y>176</y><w>112</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>464</x><y>192</y><w>24</w><h>64</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>192</x><y>168</y><w>128</w><h>88</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;90;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>184</x><y>336</y><w>24</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>328</y><w>24</w><h>128</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>408</x><y>328</y><w>24</w><h>128</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element></diagram>
