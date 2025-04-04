@@ -1,0 +1,32 @@
+<diagram program="umletino" version="15.1"><zoom_level>13</zoom_level><element><id>UMLClass</id><coordinates><x>390</x><y>0</y><w>221</w><h>91</h></coordinates><panel_attributes>User Interface 
+
+(React / Next.js)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>182</y><w>221</w><h>130</h></coordinates><panel_attributes>UI Components (Views)
+
+    Dashboard         
+Backup Status
+File Explorer
+Settings</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>390</y><w>221</w><h>104</h></coordinates><panel_attributes>Controllers (Client-Side)
+
+         Sync Controller        
+       File Sharing Controller
+         Backup Controller   
+      Security Alerts</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>585</y><w>221</w><h>104</h></coordinates><panel_attributes> Real-Time Sync Layer
+
+  Sync Files (Local ↔ Cloud)
+       Auto Backup       
+   AI-Powered Notifications</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>897</y><w>221</w><h>104</h></coordinates><panel_attributes>Authentication &amp;  
+ Authorization (OAuth
+ 2.0, Firebase Auth)
+   </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>897</y><w>221</w><h>104</h></coordinates><panel_attributes>Security and Encryption
+
+(End-to-End Encryption)
+ </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>767</x><y>897</y><w>221</w><h>104</h></coordinates><panel_attributes>Cloud Storage 
+
+(AWS S3 / Google Cloud)
+Backup Data
+Versioning   </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>1170</y><w>221</w><h>104</h></coordinates><panel_attributes>Cloud AI Services
+
+AI-Assisted File Sharing 
+AI-Driven File Recovery</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>481</x><y>78</y><w>39</w><h>130</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>481</x><y>299</y><w>39</w><h>117</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>481</x><y>481</y><w>39</w><h>130</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>910</y><w>208</w><h>52</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;someStereotype&gt;&gt;</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>598</x><y>910</y><w>195</w><h>52</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;someStereotype&gt;&gt;</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>481</x><y>676</y><w>39</w><h>247</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>481</x><y>988</y><w>39</w><h>208</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element></diagram>
