@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>160</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>API Gateway
+(Kong/AWS API GW)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>360</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>AUTH PROXY
+(OAuth 2.0)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>360</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>AI Connector
+(File Recovery)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>160</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Cloud Storage 
+(AWS S3, CGP)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>180</y>
+      <w>330</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>310.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>380</y>
+      <w>330</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>310.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>210</y>
+      <w>30</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>660</x>
+      <y>200</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>HTTP
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>480</x>
+      <y>280</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>gRPC</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
