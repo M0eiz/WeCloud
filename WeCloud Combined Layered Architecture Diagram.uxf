@@ -1,0 +1,67 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>40</x><y>50</y><w>130</w><h>50</h></coordinates><panel_attributes>User Interface 
+ -----------------------
+ (React / Next.js)
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>210</y><w>970</w><h>200</h></coordinates><panel_attributes>BUSINESS LAYER</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>0</y><w>970</w><h>200</h></coordinates><panel_attributes>PRESENTATION LAYER</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>420</y><w>970</w><h>200</h></coordinates><panel_attributes>DATA ACESS LAYER</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>640</y><w>970</w><h>200</h></coordinates><panel_attributes>INFRASTRUCTURE LAYER</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>50</y><w>140</w><h>110</h></coordinates><panel_attributes>UI Components (Views)
+ ---------------------
+     Dashboard         
+ Backup Status
+ File Explorer
+ Settings</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>50</y><w>140</w><h>110</h></coordinates><panel_attributes>Controllers (Client-Side)
+ ---------------------
+          Sync Controller        
+        File Sharing Controller
+          Backup Controller   
+       Security Alerts</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>50</y><w>140</w><h>110</h></coordinates><panel_attributes>Real-Time Sync Layer
+ ---------------------
+   Sync Files (Local ↔ Cloud)
+        Auto Backup       
+    AI-Powered Notifications</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>50</y><w>140</w><h>80</h></coordinates><panel_attributes>Security and Encryption
+ ---------------------
+ (End-to-End Encryption)
+  </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>50</y><w>140</w><h>80</h></coordinates><panel_attributes>Cloud AI Services
+ ---------------------
+ AI-Assisted File Sharing 
+ AI-Driven File Recovery</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>240</y><w>190</w><h>130</h></coordinates><panel_attributes>WeCloud Business Logic Layer
+ ----------------------
+ - Enforces backup rules
+ - Manages cross-platform sync
+ - Controls security policies
+ - Orchestrates workflows
+bg=yellow
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>240</y><w>190</w><h>130</h></coordinates><panel_attributes>FileMetadata
+ --------------
+ - FileID: UUID
+ - Versions: VersionHistory[]
+ - StorageURL: string
+ - Checksum: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>240</y><w>300</w><h>140</h></coordinates><panel_attributes>SecurityPolicy
+ --------------------
+ - PolicyID: UUID
+ - EncryptionKeyID: string (AWS KMS reference)
+ - AccessLogs: LogEntry[]
+ - AnomalyThreshold: float
+ - AllowedRegions: string[]
+ - LastModified: timestamp</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>800</x><y>230</y><w>180</w><h>140</h></coordinates><panel_attributes>Security &amp; AI Monitoring 
+ ----------------------
+ - Detects suspicious activity 
+ - Enforces encryption.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>450</y><w>440</w><h>140</h></coordinates><panel_attributes>WeCloud Data Layer
+ -----------------------------------
+ - Manages structured (PostgreSQL) and unstructured (MongoDB) data
+ - Ensures data integrity, consistency, and security
+ - Implements caching, backups, and encryption strategies
+ - Handles cloud storage integration with AWS S3, Google Cloud
+bg=yellow
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>460</y><w>240</w><h>120</h></coordinates><panel_attributes>PostgreSQL (Relational DB)
+ --
+ - Stores user accounts, metadata, logs
+ - Enforces ACID transactions
+ - Uses indexes and query optimization
+ - ORM: Sequelize (Node.js)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>440</y><w>200</w><h>70</h></coordinates><panel_attributes>MongoDB (NoSQL)
+ --
+ - Stores unstructured file .
+ - Provides flexible schema .</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>520</y><w>240</w><h>90</h></coordinates><panel_attributes>Cloud Storage (AWS S3, Google Cloud)
+ --
+ - Stores encrypted user files
+ - Secure API-based file access
+ - Multi-region replication</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>670</y><w>180</w><h>30</h></coordinates><panel_attributes>Infrastructure Layer
+bg=yellow
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>710</y><w>180</w><h>30</h></coordinates><panel_attributes>Logging &amp; Monitoring</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>710</y><w>180</w><h>30</h></coordinates><panel_attributes>Authentication &amp; Authorization</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>790</y><w>180</w><h>30</h></coordinates><panel_attributes>CI/CD pipeline</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>790</y><w>180</w><h>30</h></coordinates><panel_attributes>Security control</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>740</y><w>180</w><h>30</h></coordinates><panel_attributes>Cubernetes cluster</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>670</y><w>130</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;40;110;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>670</y><w>140</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>730</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>730</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>790</y><w>420</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>400;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>710</y><w>420</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;20;400;10</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>720</y><w>130</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>760</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>710</y><w>30</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;30;10;10</additional_attributes></element></diagram>
