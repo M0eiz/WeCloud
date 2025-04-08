@@ -21,3 +21,8 @@ const prasiddha = {
     role: "Student",
     power_level: 8999
   };
+  const moeiz = {
+    name: "Moeiz",
+    role: "Student",
+    power_level: 999
+  };
