@@ -1,10 +1,17 @@
-h1{
+h1 {
     text-align: center;
     outline: auto;
     background-color: beige;
 
 }
-a
-{
+
+a {
     color: aquamarine;
+}
+
+.profspeak {
+    color: darkslateblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
 }
