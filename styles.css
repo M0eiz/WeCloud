@@ -1,41 +1,99 @@
-body {
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    color: #2c3e50;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #2c3e50;
+    font-size: 2.75rem;
+    color: #4a148c;
+    margin-bottom: 12px;
+    text-shadow: 1px 1px 2px rgba(74, 20, 140, 0.2);
 }
 
 p {
     font-size: 1.2rem;
+    color: #546e7a;
     margin-bottom: 30px;
-    color: #555;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
 }
 
 a {
     display: inline-block;
     margin: 10px;
-    padding: 10px 20px;
-    background-color: #3498db;
+    padding: 12px 20px;
+    background: linear-gradient(145deg, #e4e7e9, #5f7deb);
     color: #fff;
     text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(30, 136, 229, 0.3);
 }
 
 a:hover {
-    background-color: #2980b9;
-    transform: translateY(-2px);
+    background: linear-gradient(145deg, #f1f4f7, #1d4242);
+    box-shadow: 0 6px 16px rgba(21, 101, 192, 0.4);
+    transform: translateY(-3px);
+}
+
+h3 {
+    margin-top: 60px;
+    font-size: 1.8rem;
+    color: #2e7d32;
+    text-shadow: 1px 1px 1px rgba(46, 125, 50, 0.15);
+}
+
+ul {
+    list-style: none;
+    margin-top: 25px;
+    padding-left: 0;
+}
+
+li {
+    margin: 14px 0;
+    font-size: 1.05rem;
+    position: relative;
+    padding-left: 20px;
+    color: #37474f;
+}
+
+li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #0be70b;
+    font-weight: bold;
+}
+
+ul a {
+    background-color: transparent;
+    color: #e51e21;
+    padding: 0;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+ul a:hover {
+    color: #eaecf1;
+    text-decoration: underline;
 }
 
 @media (max-width: 600px) {
@@ -43,6 +101,13 @@ a:hover {
         display: block;
         width: 100%;
         text-align: center;
-        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 }
