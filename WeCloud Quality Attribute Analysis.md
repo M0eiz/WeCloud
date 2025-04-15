@@ -1,8 +1,8 @@
-
 # WeCloud Quality Attribute Analysis Document
 
 ## Introduction
 WeCloud is a cross-platform cloud backup system designed to simplify secure file storage, synchronization, and recovery for users across Windows, macOS, Linux, and iOS. Given its scope and scale, the system's ability to maintain specific quality attributes—such as security, performance, scalability, reliability, usability, and maintainability—is critical. This document analyzes how WeCloud's architecture and layered design support these key quality attributes.
+
 
 ## Performance
 ### Definition: 
@@ -21,6 +21,8 @@ A key feature of WeCloud is near real-time file syncing across devices. Fast syn
 ### Trade-offs: 
 Performance optimizations, such as rapid sync under 5s, may require limiting some deep encryption checks to maintain speed. Performance may compete with security layers (e.g., encryption, AI scans) and must be optimized accordingly.
 
+
+
 ## Security
 ### Definition: 
 Protection of data and system from unauthorized access and vulnerabilities.
@@ -36,6 +38,8 @@ As a cloud storage and backup platform, WeCloud must ensure the safety of user d
 
 ### Trade-offs: 
 Strong encryption and security monitoring may slightly impact sync performance but are essential to user trust.
+
+
 
 ## Scalability
 ### Definition: 
@@ -53,6 +57,8 @@ With potential for a large user base and frequent file operations, scalability i
 ### Trade-offs: 
 Maintaining consistency across replicated services and databases introduces complexity.
 
+
+
 ## Availability
 ### Definition: 
 The system's ability to be operational and accessible when needed.
@@ -68,6 +74,8 @@ Users expect continuous access to their files and backups without downtime.
 ### Trade-offs: 
 High availability requires redundancy, which increases resource usage and cost.
 
+
+
 ## Reliability
 ### Definition: 
 The system’s ability to function correctly and consistently over time.
@@ -79,6 +87,8 @@ Users depend on the platform for critical backups and file recovery, demanding m
 - Multi-region support and replication in Cloud Storage mitigate failure risks.
 - Monitoring and Logging services track system health, enabling fast recovery from issues.
 - The use of CI/CD enables fast bug fixes and updates without disrupting service.
+
+
 
 ## Maintainability
 ### Definition: 
@@ -96,6 +106,8 @@ As a continuously evolving platform, maintainability ensures long-term sustainab
 ### Trade-offs: 
 Maintainability may slightly reduce raw performance due to extra abstraction layers.
 
+
+
 ## Modularity
 ### Definition: 
 Designing a system in independent parts that can be developed, updated, or replaced separately.
@@ -109,6 +121,8 @@ Modularity supports parallel development, simplified debugging, and faster integ
 
 ### Trade-offs: 
 Inter-service communication over APIs can introduce slight overhead.
+
+
 
 ## Usability
 ### Definition: 
@@ -126,6 +140,7 @@ A smooth, intuitive UI increases user satisfaction and adoption.
 
 ### Trade-offs: 
 Extra effort is required in frontend optimization and testing to maintain high usability.
+
 
 ## Trade-Offs and Prioritization
 WeCloud carefully balances performance and security. While encryption and anomaly detection may slightly impact sync speed, they are necessary to meet user expectations around data safety. Scalability via Kubernetes and the CI/CD pipeline is prioritized to ensure smooth onboarding of new users and deployments. Usability and maintainability are achieved through modular design and layered architecture.
