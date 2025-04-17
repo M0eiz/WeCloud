@@ -42,20 +42,28 @@
             background: #fff3cd;
             border-left: 6px solid #ffca28;
         }
-        .back-button {
-            display: inline-block;
-            padding: 12px 24px;
-            font-size: 1rem;
-            color: #ffffff;
-            background-color: #7e57c2;
-            border: none;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            box-shadow: 0 6px 18px rgba(126, 87, 194, 0.3);
-        }
+
         .icon {
             margin-right: 10px;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #0d47a1;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background-color: #1565c0;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -63,40 +71,40 @@
 <body>
     <ul>
         <li>
-            <h2>
-                Building the repo
-            </h2><br>I learned a lot about repos like how to commit files and folder
-        </li>
-        <li class="profspeak">What happened when your repo changed name? Did it affect the URL? What about the folder
-            names on your local copies?</li>
-        <li>
-            <h2>Github learns Learns</h2><br>The URL does change, but GitHub automatically redirects the old URL 
-            to the new one, so existing clones and links still work.Local folder names do not change automatically. 
-            If you want the local folder to reflect the new repo name, you'll have to manually rename it.
+            <h2>Building the repo</h2>
+            <br>I learned a lot about repos like how to commit files and folders.
         </li>
 
-        <li class="profspeak">Have you run into any difficulties with the different operating systems represented by
-            your team members?</li>
+        <li class="profspeak">
+            What happened when your repo changed name? Did it affect the URL? What about the folder names on your local copies?
+        </li>
 
         <li>
-            <br>No I did not face any difficulty.
+            <h2>Github Learns</h2>
+            <br>The URL does change, but GitHub automatically redirects the old URL to the new one, so existing clones and links still work.
+            Local folder names do not change automatically. If you want the local folder to reflect the new repo name, you'll have to manually rename it.
+        </li>
+
+        <li class="profspeak">
+            Have you run into any difficulties with the different operating systems represented by your team members?
+        </li>
 
         <li>
-            <h2>What Did I learn from Chapter 6</h2>
-            <br>Chapter 6 explains the microservices architecture, emphasizing the design of small, independent, stateless
-                services that communicate via lightweight protocols. It highlights key characteristics like loose coupling, 
-                high cohesion, and independent deployment. The chapter also covers service decomposition, communication patterns, 
-                data management, and consistency challenges. It stresses the importance of automation in continuous deployment and 
-                introduces concepts like circuit breakers for fault tolerance and RESTful principles for service interaction. 
-                Overall, it advocates for microservices to build scalable, resilient, and maintainable cloud-based systems.
-    
+            <br>No, I did not face any difficulty.
+        </li>
+
+        <li>
+            <h2>What Did I Learn from Chapter 6</h2>
+            <br>Chapter 6 explains the microservices architecture, emphasizing the design of small, independent, stateless services that communicate via lightweight protocols.
+            It highlights key characteristics like loose coupling, high cohesion, and independent deployment. The chapter also covers service decomposition, communication patterns,
+            data management, and consistency challenges. It stresses the importance of automation in continuous deployment and introduces concepts like circuit breakers for fault tolerance and RESTful principles for service interaction.
+            Overall, it advocates for microservices to build scalable, resilient, and maintainable cloud-based systems.
+        </li>
     </ul>
-    </div>
- 
-         <div style="text-align: center; margin-top: 40px ;">
-            <a href="../index.html">Back To Main</a>
-         </div>
 
+    <div class="center">
+        <a href="../index.html" class="back-button">Back To Main</a>
+    </div>
 </body>
 
 </html>
