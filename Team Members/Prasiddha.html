@@ -8,71 +8,129 @@
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(to right, #e3f2fd, #bbdefb);
+            background: linear-gradient(to right, #e3f2fd, #ede7f6);
             margin: 0;
-            padding: 20px;
-            color: #263238;
+            padding: 40px 20px;
+            color: #2e3c50;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
         }
 
         h1 {
             text-align: center;
-            color: #0d47a1;
+            color: #512da8;
+            font-size: 2.8em;
+            margin-bottom: 40px;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
+        .card {
             background-color: #ffffff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 25px rgba(80, 90, 130, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        h2 {
-            color: #1565c0;
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 35px rgba(80, 90, 130, 0.2);
+        }
+
+        .card h2 {
+            color: #009688;
+            font-size: 1.6em;
             margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 1.05em;
+            line-height: 1.8;
         }
 
         .profspeak {
-            background-color: #fff3cd;
-            border-left: 6px solid #ffb300;
+            background-color: #fefefe;
+            border-left: 6px solid #ab47bc;
             font-style: italic;
+            padding-left: 20px;
+        }
+
+        code {
+            background-color: #f3f4f6;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 0.95em;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #7e57c2;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 6px 18px rgba(126, 87, 194, 0.3);
+        }
+
+        .back-button:hover {
+            background-color: #5e35b1;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 
 <body>
-    <h1>Prasiddha’s Weekly Reflection 🌟</h1>
-    <ul>
-        <li>
+    <div class="container">
+        <h1>Prasiddha’s Weekly Reflection 🌟</h1>
+
+        <div class="card">
             <h2>Creating and Managing the Repository</h2>
             <p>This week, I learned a lot about version control systems, especially how Git helps in managing code efficiently. I also became more comfortable with using the command line interface (CLI) to initialize and manage my repository.</p>
-        </li>
+        </div>
 
-        <li class="profspeak">
+        <div class="card profspeak">
             <p><strong>Question:</strong> What happened when your repo changed name? Did it affect the URL? What about the folder names on your local copies?</p>
             <p><strong>Answer:</strong> When I changed the repository name on GitHub, the remote URL also changed. This broke the connection between my local repo and the GitHub repo until I updated the remote URL using <code>git remote set-url origin [new-URL]</code>. However, the local folder name remained the same unless I renamed it manually.</p>
-        </li>
+        </div>
 
-        <li>
+        <div class="card">
             <h2>Exploring the Command Line</h2>
             <p>I practiced pushing and pulling files using the CLI. It gave me a better understanding of how changes are tracked and shared. It’s a fast and powerful way to interact with Git.</p>
-        </li>
+        </div>
 
-        <li class="profspeak">
+        <div class="card profspeak">
             <p><strong>Question:</strong> Have you been using the VS Code terminal, Windows terminal, or something else? Try a different approach and write back here how it goes.</p>
             <p><strong>Answer:</strong> I’ve mostly been using the VS Code terminal because it’s convenient and integrated right into my code editor. I did try the Windows Terminal as well, and I liked how customizable it is. It feels faster and cleaner when running multiple CLI sessions side-by-side.</p>
-        </li>
+        </div>
 
-        <li>
+        <div class="card">
             <h2>Key Takeaways from Chapter 6</h2>
             <p>This chapter introduced me to the concept of microservices — breaking down applications into smaller, independent services. It’s a great approach for building scalable and maintainable systems.</p>
-        </li>
-    </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="../index.html" class="back-button">⬅ Back to Home</a>
+        </div>
+    </div>
 </body>
 
 </html>
