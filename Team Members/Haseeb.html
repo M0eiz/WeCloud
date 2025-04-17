@@ -4,49 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haseeb's Page</title>
+    <title>Welcome to Haseeb's Page</title>
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #f0f4ff, #dceefb);
-            color: #263238;
+            background: radial-gradient(ellipse at top, #1e1e2f 0%, #121212 100%);
+            color: #e0e0e0;
             margin: 0;
             padding: 20px;
+            overflow-x: hidden;
         }
 
-        h1 {
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.05), transparent 25%),
+                        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05), transparent 25%);
+            pointer-events: none;
+            z-index: 0;
+            filter: blur(2px);
+        }
+
+        .fancy-heading {
+            font-size: 3.2em;
             text-align: center;
-            color: #0d47a1;
-            margin-bottom: 30px;
+            font-weight: 700;
+            margin: 0;
+            background: linear-gradient(90deg, #8e44ad, #3498db);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            animation: fadeInUp 1s ease-out forwards, enhancedGlow 3s ease-in-out infinite alternate;
+        }
+
+        .emoji {
+    display: inline-block;
+    animation: none;
+    filter: none;
+}
+
+        .subheading {
+            text-align: center;
+            font-size: 1.2em;
+            color: #b0bec5;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            font-style: italic;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out 0.5s forwards;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        @keyframes enhancedGlow {
+            0% {
+                text-shadow: 0 0 12px rgba(130, 177, 255, 0.5), 0 0 24px rgba(199, 146, 234, 0.3);
+            }
+            100% {
+                text-shadow: 0 0 24px rgba(130, 177, 255, 0.8), 0 0 48px rgba(199, 146, 234, 0.5);
+            }
         }
 
         ul {
             list-style: none;
             padding: 0;
+            margin: 0 auto;
+            max-width: 100%;
+            position: relative;
+            z-index: 1;
         }
 
         li {
-            background: #ffffff;
+            background: #2a2a3d;
             border-radius: 12px;
-            padding: 20px;
-            margin: 15px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 50px;
+            margin: 20px auto;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            width: calc(100% - 4in);
+            max-width: 1200px;
+        }
+
+        li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
         }
 
         h2 {
-            color: #1565c0;
+            color: #82b1ff;
             margin-bottom: 10px;
         }
 
         .profspeak {
-            background: #fff3cd;
-            border-left: 6px solid #ffca28;
+            background: #3c2f2f;
+            border-left: 6px solid #fdd835;
         }
 
         .icon {
             margin-right: 10px;
         }
-        .back-button {
+
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .button-container a {
             display: inline-block;
             padding: 12px 24px;
             font-size: 1rem;
@@ -55,18 +140,24 @@
             border: none;
             border-radius: 30px;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            margin: 0 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
             box-shadow: 0 6px 18px rgba(126, 87, 194, 0.3);
         }
 
-        .back-button:hover {
+        .button-container a:hover {
             background-color: #5e35b1;
+            transform: scale(1.05);
         }
     </style>
 </head>
 
 <body>
-    <h1>Haseeb's Reflections 🚀</h1>
+    <header>
+        <h1 class="fancy-heading">Welcome to Haseeb's Page <span class="emoji">🚀</span></h1>
+        <p class="subheading">A glimpse into my developer journey, reflections & key learnings</p>
+    </header>
+
     <ul>
         <li>
             <h2><span class="icon">📁</span>Building the Repo</h2>
@@ -94,9 +185,28 @@
             <p>I found it interesting how they use lightweight communication methods like REST and JSON. Microservices can be built using different languages and tools, giving developers more freedom. The chapter also highlighted how they improve deployment through automation and continuous updates. Designing them well requires careful planning, especially around data sharing and service coordination. Overall, microservices make software more adaptable, reliable, and easier to update.</p>
         </li>
     </ul>
-    <div style="text-align: center; margin-top: 40px;">
+
+    <div class="button-container">
         <a href="../index.html" class="back-button">⬅ Back to Home</a>
+        <a href="https://github.com/YOUR_GITHUB_REPO_LINK" target="_blank">🌐 View GitHub Repo</a>
     </div>
+
+    <script>
+        const cards = document.querySelectorAll('li');
+
+        cards.forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                card.style.transform = `translate(${x * 0.02}px, ${y * 0.02}px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translate(0, 0)';
+            });
+        });
+    </script>
 </body>
 
-</html>
+</html
