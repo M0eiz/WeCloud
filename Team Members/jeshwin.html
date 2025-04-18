@@ -7,16 +7,18 @@
     <title>Jeshwin's Reflections</title>
     <style>
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e1f5fe, #b3e5fc);
             color: #263238;
             margin: 0;
-            padding: 20px;
+            padding: 30px;
         }
 
         h1 {
             text-align: center;
-            color: #0d47a1;
+            color: #01579b;
+            font-size: 2.5em;
+            margin-bottom: 30px;
         }
 
         ul {
@@ -26,20 +28,45 @@
 
         li {
             background: #ffffff;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 15px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-left: 8px solid #29b6f6;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease;
+        }
+
+        li:hover {
+            transform: translateY(-5px);
         }
 
         h2 {
-            color: #1565c0;
-            margin-bottom: 10px;
+            color: #0277bd;
+            margin-bottom: 12px;
         }
 
         .profspeak {
-            background: #ffecb3;
-            border-left: 6px solid #ffb300;
+            background: #fff8e1;
+            border-left: 8px solid #ffc107;
+        }
+
+        .back-button {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back-button a {
+            text-decoration: none;
+            background-color: #01579b;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button a:hover {
+            background-color: #0288d1;
         }
     </style>
 </head>
@@ -69,7 +96,16 @@
             <h2>Microservices Architecture (Chapter 6)</h2>
             <p>Microservices allow software to be built as a set of small, independent components. Each service handles one function and can be deployed separately. I found it useful for scalability and fault isolation. If one service fails, others keep working. But it also comes with challenges like data consistency and service coordination.</p>
         </li>
+
+        <li>
+            <h2>Kent Beck & Empirical Software Design</h2>
+            <p>From Kent Beck’s thoughts on Empirical Software Design, I learned that good design isn't just about planning everything upfront — it’s about adapting through experience. He highlights how frequent feedback, iterative development, and learning from real-world outcomes help shape better code. This approach encourages us to experiment, refine our designs continuously, and stay responsive to change rather than clinging to rigid blueprints.</p>
+        </li>
     </ul>
+
+    <div class="back-button">
+        <a href="file:///Users/jeshwinwilliam/Documents/Oklahoma%20city%20University/Courses/Software%20Engineering/WeCloud/WeCloud/index.html">⬅ Back to Main Page</a>
+    </div>
 </body>
 
 </html>
